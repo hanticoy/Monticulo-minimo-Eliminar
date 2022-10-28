@@ -20,14 +20,7 @@ function genMonticuloMinimo(Arreglo, valor) {
     return Arreglo;
 }
 
-let myArr = [];
 
-for (var i = 50; i < 60; i++) {
-    valor = Math.floor(Math.random() * i);
-    if (valor > 0) {
-        genMonticuloMinimo(myArr, valor)
-    }
-}
 
 
 
@@ -83,6 +76,16 @@ function eliminaMinimo(Arr) {
     
 
     return Arr ;
+}
+
+
+let myArr = [];
+
+for (var i = 50; i < 60; i++) {
+    valor = Math.floor(Math.random() * i);
+    if (valor > 0) {
+        genMonticuloMinimo(myArr, valor)
+    }
 }
 
 console.log('Monticulo Minimo:' + myArr);
